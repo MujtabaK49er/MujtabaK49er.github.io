@@ -1,13 +1,16 @@
 body {
     font-family: 'Lucida Sans';
-    color: #F5F5DC; /* Cream text color */
-    background-color: #006A4D; /* UNCC Green background */
+    color: #F8F9FA; /* Light text for readability */
+    background-color: #004B32; /* Deeper UNCC Green for a bold professional look */
 }
 
 header {
     text-align: center;
     padding: 20px;
-    color: #F5F5DC; /* Cream text in the header */
+    color: #F8F9FA; /* Light text in the header */
+    background-color: #006A4D; /* UNCC Green */
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 nav ul {
@@ -17,16 +20,16 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 main section {
     margin: 20px;
-    padding: 20px;
-    background: #E0D5B9; /* Light creamish background for content areas */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 106, 77, 0.3); /* Softer shadow in UNCC green */
-    color: #333333; /* Darker text for readability */
+    padding: 25px;
+    background: #C4A77D; /* Darker cream for content areas */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 106, 77, 0.4); /* More pronounced shadow for depth */
+    color: #2C3E50; /* Deep professional blue for text */
 }
 
 figure {
@@ -35,60 +38,66 @@ figure {
 
 footer {
     text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
-    color: #F5F5DC; /* Cream text in footer */
+    padding: 15px;
+    font-size: 1em;
+    color: #F8F9FA;
+    background-color: #006A4D;
 }
 
 main img {
-    max-width: 25%;
+    max-width: 30%;
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 /* Navigation Styling */
 nav a {
-    color: #F5F5DC; /* Cream text for nav links */
+    color: #F8F9FA;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #006A4D;
+    transition: all 0.3s ease-in-out;
 }
 
 nav a:hover {
-    background-color: #E0D5B9; /* Light creamish background on hover */
-    color: #006A4D; /* UNCC Green text on hover */
+    background-color: #C4A77D; /* Darker cream background on hover */
+    color: #004B32; /* Darker green text on hover */
 }
 
 table {
     width: 80%;
-    max-width: 500px;
-    margin: 0 auto 20px;
+    max-width: 600px;
+    margin: 20px auto;
     border-collapse: collapse;
-    background-color: #E0D5B9; /* Creamish table background */
-    color: #333333; /* Darker text for contrast */
+    background-color: #C4A77D;
+    color: #2C3E50;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 106, 77, 0.3);
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px;
     text-align: center;
-    border: 1px solid #B5A47D; /* Slightly darker cream border */
+    border: 1px solid #B5A47D;
 }
 
 th {
-    background-color: #CBBF9C; /* Muted cream header background */
+    background-color: #A07E5A; /* Richer warm tone for header */
     font-weight: bold;
+    color: #2C3E50;
 }
 
 tr:nth-child(even) {
-    background-color: #D9CFB2; /* Alternating row color in soft cream */
+    background-color: #B69774; /* Alternating row color with warmth */
 }
 
 figcaption {
     font-style: italic;
-    color: #F5F5DC;
+    color: #2C3E50;
     margin-top: 5px;
 }
