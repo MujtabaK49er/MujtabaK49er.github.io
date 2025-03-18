@@ -1,0 +1,98 @@
+body {
+    font-family:'Lucida Sans';
+    color: #ffffff; /* Set text color to white */
+    background-color: #0f317adc; /* Dark blue-green background color */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: #271313d4; /* White text in the header */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main section {
+    margin: 20px;
+    padding: 20px;
+    background: #b8c67d8e; /* Lighter blue-green color for content areas */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(112, 201, 64, 0.3); /* Softer shadow for a subtle effect */
+    color: #271313d4 /* Ensure all text is white inside content sections */
+}
+
+figure {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #271313d4; /* White text in footer */
+}
+
+main img {
+    max-width: 25%; /* Adjusts the image width */
+    height: auto;   
+    display: block;
+    margin: 0 auto;  
+    border-radius: 5px; /* Optional: adds rounded corners to the image */
+}
+
+/* Navigation Styling */
+nav a {
+    color: #ffffff; /* White text for nav links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav a:hover {
+    background-color: #b8c67d8e; /* Light blue-green background on hover */
+    color: #0f317adc; /* Dark blue-green text on hover */
+}
+
+table {
+    width: 80%; /* Adjust table width for smaller size */
+    max-width: 500px; /* Optional: Set a maximum width */
+    margin: 0 auto 20px; /* Center the table */
+    border-collapse: collapse;
+    background-color: #b8c67d8e;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #b8c67d8e;
+}
+
+th {
+    background-color: #b7c67dc7;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #b7c67d9b;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: #ffffff;
+    margin-top: 5px;
+}
