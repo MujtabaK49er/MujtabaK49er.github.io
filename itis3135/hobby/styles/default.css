@@ -6,7 +6,7 @@ body {
 
 header {
     text-align: center;
-    padding: 20px;
+    padding: 10px 20px; /* Reduced padding to make the header shorter */
     color: #F8F9FA; /* Light text in the header */
     background-color: #006A4D; /* UNCC Green */
     font-size: 1.8em;
@@ -26,10 +26,11 @@ nav ul li {
 main section {
     margin: 20px;
     padding: 25px;
-    background: #C4A77D; /* Darker cream for content areas */
+    background: linear-gradient(180deg, #F1E4C7, #C4A77D); /* Soft cream gradient */
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 106, 77, 0.4); /* More pronounced shadow for depth */
+    box-shadow: 0 4px 15px rgba(215, 111, 74, 0.4); /* Soft warm golden shadow */
     color: #2C3E50; /* Deep professional blue for text */
+    border: 3px solid #6C4A3A; /* Muted bronze border */
 }
 
 figure {
@@ -64,8 +65,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #C4A77D; /* Darker cream background on hover */
-    color: #004B32; /* Darker green text on hover */
+    background-color: #A07E5A; /* Darker, richer warm tone */
+    color: #F8F9FA;
 }
 
 table {
@@ -100,4 +101,17 @@ figcaption {
     font-style: italic;
     color: #2C3E50;
     margin-top: 5px;
+}
+
+.accent-text {
+    color: #4E3629; /* Deep chocolate brown for accents */
+}
+
+.accent-background {
+    background-color: #D86F4A; /* Muted terracotta for backgrounds */
+}
+
+.blue-button {
+    background-color: #A8C8FF; /* Light blue accent */
+    color: #2C3E50;
 }
