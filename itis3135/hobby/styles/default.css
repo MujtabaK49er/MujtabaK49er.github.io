@@ -7,7 +7,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    color: #271313d4; /* White text in the header */
+    color: #271313d4; /* Dark text in the header */
 }
 
 nav ul {
@@ -23,10 +23,10 @@ nav ul li {
 main section {
     margin: 20px;
     padding: 20px;
-    background: #b8c67d8e; /* Lighter blue-green color for content areas */
+    background: #d1bfa2; /* Dark creamish color for content areas */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(112, 201, 64, 0.3); /* Softer shadow for a subtle effect */
-    color: #271313d4; /* Ensure all text is white inside content sections */
+    color: #271313d4; /* Ensure all text is dark */
 }
 
 figure {
@@ -37,7 +37,7 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
-    color: #271313d4; /* White text in footer */
+    color: #271313d4; /* Dark text in footer */
 }
 
 main img {
@@ -59,7 +59,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #b8c67d8e; /* Light blue-green background on hover */
+    background-color: #d1bfa2; /* Dark creamish background on hover */
     color: #006A4D; /* UNCC Green text on hover */
 }
 
@@ -68,23 +68,23 @@ table {
     max-width: 500px; /* Optional: Set a maximum width */
     margin: 0 auto 20px; /* Center the table */
     border-collapse: collapse;
-    background-color: #b8c67d8e;
+    background-color: #d1bfa2; /* Dark creamish background */
     color: #ffffff;
 }
 
 th, td {
     padding: 10px;
     text-align: center;
-    border: 1px solid #b8c67d8e;
+    border: 1px solid #d1bfa2;
 }
 
 th {
-    background-color: #b7c67dc7;
+    background-color: #c2ab8e;
     font-weight: bold;
 }
 
 tr:nth-child(even) {
-    background-color: #b7c67d9b;
+    background-color: #c2ab8e;
 }
 
 figure {
