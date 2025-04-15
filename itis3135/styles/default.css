@@ -1,0 +1,226 @@
+/* Global Reset & Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1f26; /* Dark navy-blue tone */
+    color: #e4e4e4;
+}
+
+/* Layout Containers */
+header, main, footer, .divider {
+    background-color: #2b2f3a; /* Charcoal gray-blue card */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Headings & Text Alignment */
+header, header p, footer, h2, h3 {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+/* Links */
+a {
+    color: #4aa3df; /* Calm blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #7bc5ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #84b5c9;
+}
+
+/* Figures and Images */
+body figure {
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+}
+
+body figure img {
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    height: auto;
+    max-height: 350px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #353b48;
+    color: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #3a5f7d;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #2e3440;
+}
+
+tr:nth-child(odd) {
+    background-color: #2b2f3a;
+}
+
+/* Form Styling */
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #20242c;
+    border: 1px solid #3d4c5a;
+    border-radius: 6px;
+    color: #e2e2e2;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #347ab7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #4d9cda;
+}
+
+/* Divider Section */
+.divider {
+    background-color: #2f3640;
+    border: 1px solid #414b57;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.slides .slide {
+    display: none;
+    text-align: center;
+}
+
+.slides .slide img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.caption {
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0,0,0,0.4);
+    user-select: none;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Sitemap Image */
+#sitemap-figure img {
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    body figure img {
+        max-height: 250px;
+    }
+    table th, table td {
+        font-size: 0.85em;
+        padding: 10px;
+    }
+    input[type="submit"], input[type="reset"] {
+        padding: 8px 14px;
+        font-size: 0.9em;
+    }
+}
+
+/* Extra Utility */
+.hidden {
+    display: none;
+}
+
+#courses-list + button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label[for="funny"], #funny {
+    display: block;
+    margin-top: 10px;
+}
