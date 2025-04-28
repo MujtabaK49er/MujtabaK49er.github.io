@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mujtaba Ali Khan's Midnight Aero Kingfisher || ITIS 3135 || table</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <style>
+    table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #222; /* Dark background for whole table */
+  color: #fff; /* Light text color */
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Make the top header row even darker */
+table tr:first-child {
+  background-color: #111;
+}
+
+/* Alternate row colors */
+table tr:nth-child(even) {
+  background-color: #333;
+}
+
+table tr:nth-child(odd) {
+  background-color: #222;
+}
+
+  </style>
+  <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Midnight Aero Kingfisher HTML Tables</h2>
+
+    <h3>My Tabular Data</h3>
+    <ol>
+      <li>Mohiuddin Ali Khan, moinkku@gmail.com</li>
+      <li>Huda Fatima, hudafatima@gmail.com</li>
+      <li>Kevin Amanna, akevin@gmail.com</li>
+      <li>Aidan Wyat, waidan@gmail.com</li>
+      <li>Juveria Fatima, juvshigh@gmail.com</li>
+      <li>Hafsa Fatima, hfatima@gmail.com</li>
+      <li>Hafsa Konain, hkonain@gmail.com</li>
+    </ol>
+
+    <h3>Employee Data in Simple Table</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Years of Service</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Mohiuddin Ali Khan</td><td>moinkku@gmail.com</td><td>5</td></tr>
+        <tr><td>Huda Fatima</td><td>hudafatima@gmail.com</td><td>3</td></tr>
+        <tr><td>Kevin Amanna</td><td>akevin@gmail.com</td><td>7</td></tr>
+        <tr><td>Aidan Wyat</td><td>waidan@gmail.com</td><td>2</td></tr>
+        <tr><td>Juveria Fatima</td><td>juvshigh@gmail.com</td><td>4</td></tr>
+        <tr><td>Hafsa Fatima</td><td>hfatima@gmail.com</td><td>6</td></tr>
+        <tr><td>Hafsa Konain</td><td>hkonain@gmail.com</td><td>8</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Employee Data in Complex Table</h3>
+    <figure>
+      <figcaption>Employee Information</figcaption>
+      <table>
+        <thead>
+          <tr>
+            <th>Department</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Years of Service</th>
+            <th>Monthly Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">Engineering</td>
+            <td>Mohiuddin Ali Khan</td>
+            <td>moinkku@gmail.com</td>
+            <td>5</td>
+            <td>$8,000</td>
+          </tr>
+          <tr>
+            <td>Huda Fatima</td>
+            <td>hudafatima@gmail.com</td>
+            <td>3</td>
+            <td>$6,500</td>
+          </tr>
+          <tr>
+            <td>Kevin Amanna</td>
+            <td>akevin@gmail.com</td>
+            <td>7</td>
+            <td>$6,000</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Sales</td>
+            <td>Juveria Fatima</td>
+            <td>juvshigh@gmail.com</td>
+            <td>4</td>
+            <td>$4,500</td>
+          </tr>
+          <tr>
+            <td>Aidan Wyat</td>
+            <td>waidan@gmail.com</td>
+            <td>2</td>
+            <td>$5,500</td>
+          </tr>
+          <tr>
+            <td>Marketing</td>
+            <td>Hafsa Fatima</td>
+            <td>hfatima@gmail.com</td>
+            <td>6</td>
+            <td>$5,000</td>
+          </tr>
+          <tr>
+            <td>Management</td>
+            <td>Hafsa Konain</td>
+            <td>hkonain@gmail.com</td>
+            <td>8</td>
+            <td>$7,700</td>
+          </tr>
+          <tr>
+            <th colspan="3">Total</th>
+            <th>35</th>
+            <th>$43,200</th>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
+  </main>
+
+  <br><br>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script>
+    document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
+  </script>
+  <script src="scripts/HTMLInclude.min.js"></script>
+
+</body>
+</html>
