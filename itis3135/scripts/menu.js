@@ -1,10 +1,9 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     // Menu data
     const navMainData = [
         { name: "Home", url: "index.html" },
         { name: "Introduction", url: "introduction.html" },
-        { name: "Contract", url: "contract.html" },
+        { name: "Contract", url: "Contract.html" },
         { name: "About", url: "about.html" },
         { name: "Website Evaluations", url: "website_evaluations.html" },
         { name: "Tables", url: "tables.html" },
@@ -16,20 +15,19 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "BYO", url: "byo_intro.html" },
         { name: "Slideshow", url: "slideshow.html" },
         { name: "Drawing", url: "drawing.html" },
-        { name: "CRAPPY", url: "stuff/crappysite.html" },
+        { name: "CRAPPY", url: "stuff/Crappy.html" },
         { name: "Hobby", url: "hobby/index.html" },
         { name: "Client Project", url: "client_project/index.html" }
     ];
 
     const navFooterData = [
-      
-    {"name": "CLT Web", "url": "https://webpages.uncc.edu/malikha1/"},
-    {"name": "Github Page", "url": "https://github.com/MujtabaK49er/MujtabaK49er.github.io//"},
-    {"name": "Github Course Page", "url": "https://github.com/MujtabaK49er/MujtabaK49er.github.io/tree/main/itis3135"},
-    {"name": "Github", "url": "https://github.com/MujtabaK49er/"},
-    {"name": "Freecode Camp", "url": "https://www.freecodecamp.org/MujtabaKhan49er"},
-    {"name": "CodeAcademy", "url": "https://www.codecademy.com/profiles/MujtabaKhan49er"},
-    {"name": "LinkedIn", "url": "https://www.linkedin.com/in/mujtaba-ali-khan-607b2928a/overlay/contact-info/"}
+        { name: "CLT Web", url: "https://webpages.uncc.edu/malikha1/" },
+        { name: "Github Page", url: "https://github.com/MujtabaK49er/MujtabaK49er.github.io/" },
+        { name: "Github Course Page", url: "https://github.com/MujtabaK49er/MujtabaK49er.github.io/tree/main/itis3135" },
+        { name: "Github", url: "https://github.com/MujtabaK49er/" },
+        { name: "Freecode Camp", url: "https://www.freecodecamp.org/MujtabaKhan49er" },
+        { name: "CodeAcademy", url: "https://www.codecademy.com/profiles/MujtabaKhan49er" },
+        { name: "LinkedIn", url: "https://www.linkedin.com/in/mujtaba-ali-khan-607b2928a/overlay/contact-info/" }
     ];
 
     // Helper function to create menu links and prevent duplication
@@ -39,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Prevent duplication if links are already added
         data.forEach((item, idx) => {
-            // Check if the link already exists
             if (![...container.getElementsByTagName('a')].some((link) => link.href === item.url)) {
                 const link = document.createElement("a");
                 link.textContent = item.name;
@@ -48,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 container.appendChild(link);
 
-                // Add separators unless it's the last item
                 if (idx < data.length - 1) {
                     container.appendChild(document.createTextNode(" | "));
                 }
@@ -72,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="https://www.freecodecamp.org/certification/MujtabaKhan49er/responsive-web-design" target="_blank">
                     Certified in Responsive Web Design
                 </a>,
-                <a href="https://www.freecodecamp.org/certification/MujtabaKhan49er/javascript-algorithms-and-data-structures-v8">
+                <a href="https://www.freecodecamp.org/certification/MujtabaKhan49er/javascript-algorithms-and-data-structures-v8" target="_blank">
                     Certified in JS
                 </a>
             </p>
@@ -85,9 +81,8 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
-    // jQuery AJAX to fetch and populate menu data (if needed)
+    // jQuery AJAX to fetch and populate menu data (optional)
     $(document).ready(() => {
-        // Prevent multiple AJAX calls to avoid duplication
         if ($("#menu-main").children().length === 0) {
             $.ajax({
                 url: "json/menuData.json", // Path to your JSON file
@@ -96,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 success: (data) => {
                     // Populate the main menu
                     data.mainMenu.forEach((item) => {
-                        if (![...$("#menu-main a")].some((link) => link.href === item.url)) {
+                        if (!$("#menu-main a[href='" + item.url + "']").length) {
                             const link = $("<a>").text(item.name).attr("href", item.url);
                             $("#menu-main").append(link).append(" | ");
                         }
@@ -104,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     // Populate the footer menu
                     data.footerMenu.forEach((item) => {
-                        if (![...$("#menu-footer a")].some((link) => link.href === item.url)) {
+                        if (!$("#menu-footer a[href='" + item.url + "']").length) {
                             const link = $("<a>").text(item.name).attr("href", item.url);
                             $("#menu-footer").append(link).append(" | ");
                         }
