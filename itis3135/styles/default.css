@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  body, p, div, span, a, img, button, input {
+    box-sizing: inherit; /* Add specific tags or classes if needed */
+  }
+  
 /* Global Reset & Base Styles */
 body {
     margin: 0;
