@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mujtaba Ali Khan's Midnight Aero Kingfisher || ITIS 3135 || Forms</title>
+  <link rel="stylesheet" href="styles/default.css" />
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Mujtaba Ali Khan's Midnight Aero Kingfisher || ITIS 3135</h1>
+    <nav id="menu-main"></nav>
+    <nav id="menu-submenu"></nav>
+    <p>
+      <span id="slogan">"Glide through the code, soar with logic"</span>
+    </p>
+  </header>
+
+  <main>
+    <h2>Midnight Aero Kingfisher Forms</h2>
+    <h3>Please fill out the form below</h3>
+
+    <form action="#" method="get">
+      <div class="divider">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required size="30" /><br />
+
+        <!-- Phone -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required size="15" /><br />
+
+        <!-- Email -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required size="30" /><br />
+
+        <!-- Checkboxes -->
+        <label>Preferred Contact Method:</label><br />
+        <input type="checkbox" id="email-contact" name="contact-method" value="email" />
+        <label for="email-contact">Email</label><br />
+        <input type="checkbox" id="phone-contact" name="contact-method" value="phone" />
+        <label for="phone-contact">Phone</label><br /><br />
+
+        <!-- Radio Buttons -->
+        <label>Would you recommend Midnight Aero Kingfisher to a friend?</label><br />
+        <input type="radio" id="yes" name="recommend" value="yes" />
+        <label for="yes">Yes</label><br />
+        <input type="radio" id="no" name="recommend" value="no" />
+        <label for="no">No</label><br />
+        <input type="radio" id="maybe" name="recommend" value="maybe" />
+        <label for="maybe">Maybe</label><br />
+
+        <!-- Dropdown -->
+        <label for="role">Your Role:</label>
+        <select id="role" name="role" required>
+          <option value="">Select</option>
+          <option value="student">Student</option>
+          <option value="developer">Developer</option>
+          <option value="manager">Manager</option>
+          <option value="other">Other</option>
+        </select><br /><br />
+
+        <!-- Buttons -->
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" /><br />
+      </div>
+    </form>
+  </main>
+
+  <footer id="footer-container">
+    <p>Please click on the links to navigate through my site</p>
+    <nav id="menu-footer"></nav>
+  </footer>
+
+  <script src="scripts/menu.js"></script>
+</body>
+</html>
