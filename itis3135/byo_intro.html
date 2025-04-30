@@ -1,96 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BYO Intro</title>
-    <link rel="stylesheet" href="styles/default.css">
-   
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BYO Intro</title>
+  <link rel="stylesheet" href="styles/default.css" />
 
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <!-- Fix universal selector warning via box-sizing reset -->
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+
+    /* Optional: Set padding-safe full width container */
+    .caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 16px;
+      padding: 10px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  </style>
+
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <header>
+    <h1>Mujtaba Ali Khan Midnight Aero Kingfisher || ITIS 3135</h1>
+    <nav id="menu-main"></nav>
+    <nav id="menu-submenu"></nav>
+    <p><span id="slogan">"A Flash of Blue, A Story of Precision"</span></p>
+  </header>
 
-    <header>
-        <h1>Mujtaba Ali Khan Midnight Aero Kingfisher || ITIS 3135</h1>
-        <nav id="menu-main"></nav>
-        <nav id="menu-submenu"></nav>
-        <p>
-            <span id="slogan">"A Flash of Blue, A Story of Precision"</span>
-        </p>
-    </header>
+  <h2>BYO Intro Page</h2>
+  <h3>Time to BYO Intro page, please fill out the form below to create your own page</h3>
 
-    <!--<main>-->
-      <h2>BYO Intro Page</h2>
+  <form id="intro-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Mujtaba Ali Khan" required /><br />
 
-    <h3>Time to BYO Intro page, please fill out the form below to create your own page</h3>
+    <label for="mascot">Mascot:</label>
+    <input type="text" id="mascot" name="mascot" placeholder="Midnight Aero Kingfisher" required /><br />
 
-    <form id="intro-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Mujtaba Ali Khan" required><br>
-    
-        <label for="mascot">Mascot:</label>
-        <input type="text" id="mascot" name="mascot" placeholder="Midnight Aero Kingfisher" required><br>
-    
-        <label for="image">Upload Image (PNG/JPG):</label>
-        <input type="file" id="intro-image" name="image" accept="image/png, image/jpeg" required><br>
+    <label for="intro-image">Upload Image (PNG/JPG):</label>
+    <input type="file" id="intro-image" name="image" accept="image/png, image/jpeg" required /><br />
 
-        <label for="image-caption">Image Caption:</label>
-        <input type="text" id="image-caption" name="image-caption" placeholder="Describe your image" required><br>
-    
-        <label for="personal-background">Personal Background:</label>
-        <textarea id="personal-background" name="personal-background" placeholder="Your personal background..." required></textarea><br>
-    
-        <label for="professional-background">Professional Background:</label>
-        <textarea id="professional-background" name="professional-background" placeholder="Your professional background..." required></textarea><br>
-    
-        <label for="academic-background">Academic Background:</label>
-        <textarea id="academic-background" name="academic-background" placeholder="Computer Science major..." required></textarea><br>
-    
-        <label for="web-development">Background in Web Development:</label>
-        <textarea id="web-development" name="web-development" placeholder="Web Developer..." required></textarea><br>
-    
-        <label for="platform">Primary Computer Platform:</label>
-        <input type="text" id="platform" name="platform" placeholder="Enter your primary platform (e.g., Mac, Windows" required><br>
-    
-        <div id="courses-list"></div>
-        <button type="button" id="add-course-btn">Add Course</button>
+    <label for="image-caption">Image Caption:</label>
+    <input type="text" id="image-caption" name="image-caption" placeholder="Describe your image" required /><br />
 
+    <label for="personal-background">Personal Background:</label>
+    <textarea id="personal-background" name="personal-background" placeholder="Your personal background..." required></textarea><br />
 
-        
-        <label for="funny">Funny Thing:</label>
-        <input type="text" id="funny" name="funny" placeholder="Something funny..."><br>
-    
-        <label for="other">Anything else?</label>
-        <input type="text" id="other" name="other" placeholder="Anything else you want to share?"><br>
-    
-        <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
-        <input type="checkbox" id="agree" name="agree" required><br>
-    
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-    </form>
-    
+    <label for="professional-background">Professional Background:</label>
+    <textarea id="professional-background" name="professional-background" placeholder="Your professional background..." required></textarea><br />
 
-    <div id="result" class="hidden">
-        <!-- This will show after form submission -->
-        <h3>Your BYO Intro Page:</h3>
-        <!-- In the result section where the image will be displayed -->
-        
-        <div id="intro-content">
-            <!-- Dynamically populated content goes here -->
-        </div>
-        <div id="load-image"></div>
-        
-    </div>
+    <label for="academic-background">Academic Background:</label>
+    <textarea id="academic-background" name="academic-background" placeholder="Computer Science major..." required></textarea><br />
 
-    <footer id="footer-container">
-        <p>Please click on the links to navigate through my site</p>
-        <nav id="menu-footer"></nav>
-    </footer>
-    <script src="scripts/menu.js"></script> 
-    <script src="scripts/defaultscripts.js"></script>
-    <script src="scripts/survey.js"></script>
-    
+    <label for="web-development">Background in Web Development:</label>
+    <textarea id="web-development" name="web-development" placeholder="Web Developer..." required></textarea><br />
+
+    <label for="platform">Primary Computer Platform:</label>
+    <input type="text" id="platform" name="platform" placeholder="Enter your primary platform (e.g., Mac, Windows)" required /><br />
+
+    <div id="courses-list"></div>
+    <button type="button" id="add-course-btn">Add Course</button><br /><br />
+
+    <label for="funny">Funny Thing:</label>
+    <input type="text" id="funny" name="funny" placeholder="Something funny..." /><br />
+
+    <label for="other">Anything else?</label>
+    <input type="text" id="other" name="other" placeholder="Anything else you want to share?" /><br />
+
+    <div>
+      <input type="checkbox" id="agree" name="agree" required />
+      <label for="agree">
+        I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+      </label>
+    </div><br />
+
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Reset" />
+  </form>
+
+  <div id="result" class="hidden">
+    <h3>Your BYO Intro Page:</h3>
+    <div id="intro-content"></div>
+    <div id="load-image"></div>
+  </div>
+
+  <footer id="footer-container">
+    <p>Please click on the links to navigate through my site</p>
+    <nav id="menu-footer"></nav>
+  </footer>
+
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/defaultscripts.js"></script>
+  <script src="scripts/survey.js"></script>
 </body>
 </html>
