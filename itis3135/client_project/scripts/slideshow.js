@@ -1,12 +1,11 @@
 $(document).ready(function () {
     // Array of images and captions
     const imageList = [
-        { src: "images/president.jpeg", caption: "President" },
-        { src: "images/VP.jpeg", caption: "Vice President" },
-        { src: "images/treasurer.jpeg", caption: "Treasurer" },
-        { src: "images\Event_coordinator.png", caption: "Events Chair" },
-        {
-            src: "images/secretary.png", caption: "Events Chair" }
+        { src: "images/president.png", caption: "President" },
+        { src: "images/VP.png", caption: "Vice President" },
+        { src: "images/treasurer.png", caption: "Treasurer" },
+        { src: "images/Event_coordinator.png", caption: "Events Chair" },
+       
     ];
   
     // Dynamically load images into the slideshow
