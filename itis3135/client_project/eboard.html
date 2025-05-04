@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Project - E-board</title>
+    <link rel="stylesheet" href="styles/default.css"> <!-- External CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h1>Client Project || E-board</h1>
+        <nav id="menu-main"></nav>
+        <nav id="menu-submenu"></nav>
+        <p>
+            <span id="slogan">"A Flash of Blue, A Story of Precision"</span>
+        </p>
+   
+
+        <h2>Slideshow</h2>
+        <p>View the different roles in the organization.</p>
+        <div class="slideshow-container">
+            <div class="slides">
+                <!-- Dynamically populated slides will go here -->
+            </div>
+            <!-- Navigation Arrows -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+    </main>
+
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+        <div data-include="../components/footer.html"></div>
+
+    </footer>
+    
+    <script src="scripts/slideshow.js"></script> <!-- External JS for slideshow -->
+
+   <!-- <script src="scripts/menu.js"></script> -->
+</body>
+</html>

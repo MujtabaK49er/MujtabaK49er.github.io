@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Client Project - Index</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <style>
+            main {
+                background-color: #8c92d4; /* Match site background */
+                color: #333333; /* Match site text color */
+                margin: 20px auto;
+                padding: 20px;
+                max-width: 800px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+    
+            label {
+                font-weight: bold;
+            }
+    
+            input, textarea, button {
+                font-size: 1rem;
+                padding: 0.5rem;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+    
+            button {
+                background-color: #333333; /* Match button style */
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+    
+            button:hover {
+                background-color: #6e1021cb;
+            }
+    
+            .contact-links {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+    
+            .contact-links a {
+                text-decoration: none;
+                color: #6e1021cb;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+    
+            .contact-links a:hover {
+                color: #0095b3;
+            }
+        </style>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>    
+    </head>
+    <body>
+        
+        <header>
+            <div data-include="components/header.html"></div>
+            
+
+        </header>
+        
+        <main>
+            <h2>Stay Connected with Muslim Student Association</h2>
+        <p>You can reach us through the following platforms or by filling out the contact form below:</p>
+        
+        <div class="contact-links">
+            <a href="https://www.instagram.com/cltmsa/" target="_blank">Follow us on Instagram</a>
+            <a href="https://ninerengage.charlotte.edu/organization/muslim-students-association" target="_blank">Visit us on Niner Engage</a>
+            <a href="mailto:msa.uncc@gmail.com">Email Us: msa.uncc@gmail.com</a>
+        </div>
+
+        <h3>Contact Form</h3>
+        <form action="submit_contact.php" method="post">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email *</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+            
+            
+            
+        </main>
+        
+        
+        <footer>
+            <div data-include="components/footer.html"></div>
+
+        </footer>
+        <script src="scripts/HTMLInclude.min.js"></script> 
+    </body>
+</html>
