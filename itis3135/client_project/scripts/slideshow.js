@@ -4,7 +4,7 @@ $(document).ready(function () {
         { src: "images/president.png", caption: "President" },
         { src: "images/VP.png", caption: "Vice President" },
         { src: "images/treasurer.png", caption: "Treasurer" },
-        { src: "images/Event_coordinator.png", caption: "Events Chair" },
+        { src: "images/Event_coordinator.png", caption: "Events Chair" }
        
     ];
   

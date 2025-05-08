@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Website Evaluations", url: "website_evaluations.html" },
         { name: "Tables", url: "tables.html" },
         { name: "Forms", url: "forms.html" },
-        { name: "Project Overview", url: "project_overview.html" },
+        /*{ name: "Project Overview", url: "project_overview.html" },*/
         { name: "Peer Review 1", url: "peerreview1.html" },
         { name: "Peer Review 2", url: "peerreview2.html" },
-        { name: "First Scripts", url: "firstscripts.html" },
+       /* { name: "First Scripts", url: "firstscripts.html" },*/
         { name: "BYO", url: "byo_intro.html" },
         { name: "Slideshow", url: "slideshow.html" },
         { name: "Drawing", url: "drawing.html" },

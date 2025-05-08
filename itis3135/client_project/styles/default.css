@@ -73,7 +73,7 @@ header .menu-toggle {
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     }
 
-    header nav.active {
+    .active {
         display: flex;
     }
 
@@ -86,7 +86,7 @@ header .menu-toggle {
 footer {
     background: linear-gradient(90deg, #014421, #022015);
     color: #fffbea;
-    padding: 2rem;
+   /* padding: 2rem;*/
     text-align: center;
     position: relative;
     bottom: 0;
@@ -161,7 +161,7 @@ h2 {
 h3 {
     font-size: 1.6rem;
     margin-bottom: 15px;
-    color: #022015;
+    color: #0a9396;
 }
 
 /* Main Content Styles */
@@ -196,7 +196,7 @@ ul {
 /* Event Gallery */
 .event-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* reduced min width */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 25px;
     justify-items: center;
     align-items: center;
@@ -204,8 +204,8 @@ ul {
 }
 
 .event-gallery img {
-    width: 90%; /* smaller width percentage */
-    max-width: 200px; /* reduced from 300px */
+    width: 90%;
+    max-width: 200px;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -250,7 +250,8 @@ ul {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -274,11 +275,12 @@ ul {
     border-radius: 0 3px 3px 0;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-/*polaied frame*/
 
+/* Polaroid Frame */
 .polaroid {
     position: relative;
     display: flex;
@@ -290,7 +292,7 @@ ul {
 
 .event-image {
     width: 70%;
-    height: auto;
+    /*height: auto;*/
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -304,18 +306,11 @@ ul {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-h3 {
-    color: #0a9396;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
 p {
     font-size: 0.95em;
     color: #555;
 }
 
-/*mobile reposnive*/
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .event-container {
