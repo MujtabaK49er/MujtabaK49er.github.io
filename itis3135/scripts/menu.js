@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Menu data
+    
     const navMainData = [
         { name: "Home", url: "index.html" },
         { name: "Introduction", url: "introduction.html" },
